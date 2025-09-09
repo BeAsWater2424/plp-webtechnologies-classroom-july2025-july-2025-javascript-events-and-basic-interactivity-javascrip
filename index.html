@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Interactive Web Page</h1>
+        <button id="theme-toggle">Toggle Light/Dark Mode</button>
+    </header>
+
+    <main>
+        <section>
+            <h2>Counter Game 🎮</h2>
+            <p>Clicks: <span id="counter">0</span></p>
+            <button id="increment-btn">Click Me!</button>
+        </section>
+
+        <section>
+            <h2>FAQ Section ❓</h2>
+            <div class="faq-item">
+                <button class="faq-question">What is JavaScript?</button>
+                <p class="faq-answer">JavaScript is a programming language for web development.</p>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What is DOM?</button>
+                <p class="faq-answer">The DOM (Document Object Model) allows JS to interact with HTML elements.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Signup Form 📝</h2>
+            <form id="signup-form">
+                <label>
+                    Name:
+                    <input type="text" id="name" required>
+                </label>
+                <label>
+                    Email:
+                    <input type="email" id="email" required>
+                </label>
+                <label>
+                    Password:
+                    <input type="password" id="password" required>
+                </label>
+                <button type="submit">Submit</button>
+                <p id="form-message"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
